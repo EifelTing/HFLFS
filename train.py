@@ -238,7 +238,6 @@ if __name__ == '__main__':
                 loss_D.backward()
                 optimizer_D.step()
             else:
-                # 迭代老师G
                 img_fake, tea_outs = model.netG(src_image1, latent_id)
                 # model.netD.requires_grad_(True)
                 # G loss
@@ -251,7 +250,6 @@ if __name__ == '__main__':
                 loss_G_ID = (1 - F.cosine_similarity(latent_id, latent_fake, 1)).mean()
                 real_feat = model.netD.get_feature(src_image1)
                 feat_match_loss = model.criterionFeat(feat["3"],real_feat["3"])
-                # 嘴巴损失
                 source_mouth = mouth_net(img_id_112[:, :, h1:h2, w1:w2])  # mouth
                 result_mouth = mouth_net(img_fake_down[:, :, h1:h2, w1:w2])  # mouth
                 loss_G_Mouth = (1 - F.cosine_similarity(source_mouth, result_mouth, 1)).mean()
@@ -266,7 +264,6 @@ if __name__ == '__main__':
                     fake_back = encode_segmentation(img_fake_512, parsing_fake)
                     fake_back = F.interpolate(fake_back, size=256, mode="bilinear", align_corners=True)
 
-                    # pixel损失
                     back_pixel_loss = F.l1_loss(tgt_back, fake_back) * opt.lambda_rec
                     tgt_back_features = vgg(tgt_back)
                     fake_back_features = vgg(fake_back)
