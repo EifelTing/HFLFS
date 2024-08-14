@@ -11,8 +11,6 @@ Advanced face swapping approaches have achieved high-fidelity results. However, 
 
 ## Environment
 
-### Code Environment
-
 - python3.6+
 - pytorch1.5+
 - opencv
