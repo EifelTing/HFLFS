@@ -20,4 +20,18 @@ Advanced face swapping approaches have achieved high-fidelity results. However, 
 - timm==0.5.4
 - ...
 
-#### Dataset
+### Traaining
+
+```
+python train.py --batchSize 16  --gpu_ids 0 --dataset /path/to/VGGFace2 --Gdeep False
+```
+
+## Acknowledgements
+
+<!--ts-->
+* [Deepfacelab](https://github.com/iperov/DeepFaceLab)
+* [Insightface](https://github.com/deepinsight/insightface)
+* [Face-parsing.PyTorch](https://github.com/zllrunning/face-parsing.PyTorch)
+* [BiSeNet](https://github.com/CoinCheung/BiSeNet)
+* [SimSwap](https://github.com/neuralchen/SimSwap)
+<!--te-->
