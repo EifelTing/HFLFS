@@ -24,6 +24,19 @@ Advanced face swapping approaches have achieved high-fidelity results. However, 
 python train.py --batchSize 16  --gpu_ids 0 --dataset /path/to/VGGFace2 --Gdeep False
 ```
 
+## Citation
+~~~
+@article{
+  yang2024fast,
+  title={Fast face swapping with high-fidelity lightweight generator assisted by online knowledge distillation},
+  author={Yang, Gaoming and Ding, Yifeng and Fang, Xianjin and Zhang, Ji and Chu, Yan},
+  journal={The Visual Computer},
+  pages={1--21},
+  year={2024},
+  publisher={Springer}
+}
+~~~
+
 ## Acknowledgements
 
 <!--ts-->
