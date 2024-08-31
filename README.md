@@ -1,6 +1,6 @@
-# Fast Face Swapping with High-Fidelity Lightweight Generator Assisted by Online Knowledge Distillation (TVC 2024)
+# Fast face swapping with high-fidelity lightweight generator assisted by online knowledge distillation (TVC 2024)
 
-This is the official code for "Fast Face Swapping with High-Fidelity Lightweight Generator Assisted by Online Knowledge Distillation", accepted by The Visual Computer 2024.
+This is the official code for "Fast face swapping with high-fidelity lightweight generator assisted by online knowledge distillation", accepted by The Visual Computer 2024.
 
 Paper link: https://link.springer.com/article/10.1007/s00371-024-03414-2
 
